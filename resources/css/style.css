@@ -1,0 +1,400 @@
+/* Overall styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'oswald', sans-serif;
+}
+
+.container {
+    padding: 2rem 1.5rem;
+}
+
+.background-color {
+    background-color: white;
+}
+
+h2 {
+    margin: 1.5rem 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* header section */
+
+header {
+    margin-top: 0;
+    height: 4rem;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-navbar {
+    margin-left: 1.5rem;
+}
+
+header.logo, header h1 {
+    display: inline-block;
+} 
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+#school {
+    color: rgb(101, 105, 105);
+    font-weight: 300;
+    letter-spacing: 0.33rem;
+}
+
+header nav li, footer nav li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+nav {
+    margin-right: 1.5rem;
+}
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+/* first section */
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.intro figure {
+    width: 60%;
+    overflow: hidden;
+}
+
+.intro figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.intro .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+intro .container p, .button {
+    margin: 1.5rem 0;
+}
+
+.button {
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(12, 62, 82);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* second section, information, and 4th section, theses */
+
+.exhibit {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.left {
+    width: 60%;
+    overflow: hidden;
+    padding-right: 1.5rem;
+}
+
+.left img, .left video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.left .quote {
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+.right-container {
+    width: 40%;
+}
+
+.mobile {
+    display: none;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    border: solid rgba(187, 223, 223, 0.4) 1px;
+    padding-right: 1rem;
+}
+
+.box figure {
+    width: 35%;
+    overflow: hidden;
+    height: auto;
+    margin: 1rem;
+}
+
+.box .desktop {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.box .text {
+    width: 65%;
+}
+
+.box .text * {
+    margin-bottom: 0.5rem;
+}
+
+/* 3rd section, majors */
+
+.majors-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.major {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 1.5rem;
+    width: 30%;
+    min-height: 20rem;
+}
+
+.major figure {
+    max-width: 33.25rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.major img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.major h3 {
+    padding: 1rem;
+}
+
+.courses {
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.classes {
+    text-transform: capitalize;
+    padding: 0 1rem;
+}
+
+/* 4th section, theses. Details not covered in 2nd section. */
+
+.left h3 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 4rem;
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: inline-block;
+}
+
+/* mobile media query */
+
+@media only screen and (max-width: 721px) {
+    
+    /* overall styling of media query*/
+    
+    body {
+        max-width: 721px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
+    }
+
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    /* header section media query*/
+
+    .icon-navbar {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    /* intro, first section, media query*/
+
+    .intro {
+        padding: 0;
+        display: contents;
+    }
+
+    .intro figure {
+        width: 100%;
+    }
+
+    .intro .container {
+        padding: 0 1rem 0.5rem 1rem;
+    }
+
+    .intro h2 {
+        text-align: left;
+        margin: 2rem 0;
+    }
+
+    /* Information container, second section, media query section */
+
+    .exhibit {
+        padding-top: 0;
+    }
+    
+    .exhibit .right-container {
+        width: 100%;
+    }
+
+    .box {
+        display: initial;
+        border: none;
+        padding-right: 0;
+    }
+    
+    .box figure {
+        width: 100%;
+        padding: 1rem 0 1rem 0;
+        margin: auto;
+    }
+    
+    .box .mobile {
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    .box .desktop {
+        display: none;
+    }
+
+    .box .text {
+        padding: 1rem 1rem 3rem 1rem;
+        width: 100%;
+    }
+
+    .box .lecture {
+        padding-bottom: 0;
+    }
+
+    /* majors, 3rd section, media query */
+
+    .majors-container {
+        display: contents;
+    }
+
+    .major {
+        width: 100%;
+        min-height: auto;
+        margin: 0.5rem 0;
+        padding-bottom: 0.5rem;
+        background-color: rgb(187, 223, 223);
+    }
+
+    .academics {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    h2 {
+        margin: 0 0 1rem 0;
+    }
+
+    /* thesis exhibit, 4th section, media query */
+
+    .exhibit .left {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .thesis {
+        padding: 2rem 0 1.5rem 0;
+    }
+
+    /* footer media query */
+
+    footer span {
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
